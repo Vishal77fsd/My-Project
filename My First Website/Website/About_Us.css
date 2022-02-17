@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+  background-color: #c1c9ff;
+}
+
+/* <-------- Universal ----------> */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* <---------- head ----------> */
+.head {
+  background-color: #009595;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+/* <---------- User Img ----------> */
+#user img {
+  position: absolute;
+  width: 200px;
+}
+
+/* <---------- User ----------> */
+
+#user {
+  background-color: wheat;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+  margin-top: 25px;
+}
+
+/* <---------- About Me name ----------> */
+#head {
+  text-align: center;
+  font-family: monospace;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+/* <---------- container ----------> */
+
+.container {
+  /* border: 2px solid black; */
+  background-color: #8b8b8b7d;
+}
+
+/* <---------- about_me ----------> */
+#about_me {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: justify;
+  font-weight: lighter;
+}
+
+/* <---------- foot ----------> */
+.foot {
+  text-align: center;
+  background-color: azure;
+  font-size: 1.5em;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}

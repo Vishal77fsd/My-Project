@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* <---------- Body ----------> */
+body {
+  background-color: aqua;
+}
+
+/* <---------- Head ----------> */
+#Head {
+  border: 2px solid black;
+}
+
+/* <---------- Contact-Img ----------> */
+#Contact-Img {
+  width: 500px;
+  /* border: 2px solid black; */
+}
+
+/* <---------- Contact-Grid ----------> */
+.Contact-Grid {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 6fr 10fr;
+  font-size: 1.2em;
+}
+
+/* <---------- Contact-Page ----------> */
+#Contact-Page {
+  /* border: 2px solid blue; */
+  border-radius: 20px;
+  background-color: #dbdbf7;
+}
+
+/* <---------- Contact-Heading ----------> */
+#Contact-Heading {
+  /* border: 2px solid black; */
+  text-align: center;
+  font-family: Verdana;
+  font-size: 2em;
+  background-color: rgba(255, 255, 151, 0.959);
+  border-radius: 5px;
+}
+
+/* <---------- Contact-Some ----------> */
+#Contact-Some {
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* <---------- Top-Bar ----------> */
+#Top-Bar {
+  /* border: 2px solid black; */
+  height: 2em;
+  background-color: rgb(0, 194, 194);
+}
+
+/* <---------- Top-Bar a img ----------> */
+#Top-Bar a img {
+  border: 1px solid black;
+  margin: 3px;
+}
+
+/* <---------- Top-Bar a img:hover ----------> */
+#Top-Bar a img:hover {
+  transform: scale(1.2);
+}
+
+/* <---------- Form ----------> */
+.form {
+  /* border: 2px solid rgb(0, 0, 0); */
+  /* display: flex; */
+  margin: 20px;
+  height: 300px;
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+}
+
+/* <---------- Form-Box ----------> */
+.Form-Box {
+  background-color: rgba(128, 128, 255, 0.52);
+  padding: 2px;
+}
+
+/* <---------- foot ----------> */
+.foot {
+  text-align: center;
+  background-color: azure;
+  font-size: 1.5em;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}
