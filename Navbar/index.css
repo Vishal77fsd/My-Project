@@ -1,0 +1,39 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+/* <--------- navabar --------> */
+#navbar {
+  background-color: #d9d9ff;
+  height: 4rem;
+}
+
+/* <--------- navmenu --------> */
+#navmenu {
+  background-color: #d9d9ff;
+  position: absolute;
+  right: 20px;
+}
+
+/* <--------- nav --------> */
+.nav {
+  border: 2px solid blue;
+  border-radius: 5px;
+  display: inline-block;
+  list-style: none;
+  padding: 5px 10px;
+  margin: 0px 5px;
+  transition: background-color;
+  transition-duration: 1s;
+}
+
+/* <--------- nav:hover --------> */
+.nav:hover {
+  background-color: #a1a1a1;
+  color: white;
+}
