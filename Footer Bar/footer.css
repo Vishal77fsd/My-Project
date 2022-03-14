@@ -1,0 +1,63 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(155, 155, 155);
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+/* <---------- footerborder ----------> */
+#footerborder {
+  border: 2px solid black;
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 8rem;
+  position: fixed;
+  bottom: 0px;
+}
+
+/* <---------- footerlogo ----------> */
+#footerlogo {
+  /* border: 2px solid blue; */
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+  left: 43%;
+}
+
+/* <---------- logo ----------> */
+.logo {
+  /* border: 2px solid red; */
+  margin: 0 20px;
+}
+
+/* <---------- logo img ----------> */
+.logo img {
+  transform: scale(1.5);
+  filter: invert(100%);
+}
+
+/* <---------- logo img:hover ----------> */
+.logo img:hover {
+  transform: scale(2);
+}
+
+/* <---------- copy ----------> */
+.copy {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* <---------Media Queries----------> */
+
+@media (min-width: 300px) and (max-width: 500px) {
+  /* <---------- footerlogo ----------> */
+  #footerlogo {
+    /* border: 2px solid white; */
+    position: relative;
+    left: 30%;
+  }
+}
