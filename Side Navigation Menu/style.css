@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #e2e9f7;
+}
+
+.side-nav {
+  width: 250px;
+  height: 100%;
+  background: #0d74f5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 130px;
+}
+
+.logo-img {
+  width: 150px;
+}
+
+.nav-links {
+  list-style-type: none;
+  position: relative;
+}
+
+.nav-links li {
+  padding: 15px 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li a img {
+  margin: 0 10px;
+}
+
+.nav-icon {
+  height: 25px;
+}
+
+.active {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+  display: none;
+  transition: top 0.5s;
+}
+
+.nav-links li:hover a {
+  color: blue;
+  transition: 0.3s;
+}
+
+.nav-links li:hover ~ .active {
+  display: block;
+}
+
+.nav-links li:nth-child(1):hover ~ .active {
+  top: 0%;
+}
+
+.nav-links li:nth-child(2):hover ~ .active {
+  top: 16.6%;
+}
+
+.nav-links li:nth-child(3):hover ~ .active {
+  top: 33.2%;
+}
+
+.nav-links li:nth-child(4):hover ~ .active {
+  top: 49.8%;
+}
+
+.nav-links li:nth-child(5):hover ~ .active {
+  top: 66.4%;
+}
+
+.nav-links li:nth-child(6):hover ~ .active {
+  top: 83%;
+}
+
+@media only screen and (max-width : 600px){
+    .side-nav{
+        width: 150px;
+    }
+
+    .nav-links li a p{
+        display: none;
+    }
+
+    .nav-links li a{
+        justify-content: center;
+    }
+}
