@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap");
+:root {
+    --bg-blue: blue;
+    --bg-yellow: yellow;
+    --bg-green: green;
+    --bg-red: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* container */
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+/* left */
+
+.left {
+    height: 44em;
+    overflow: hidden;
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1631125915902-d8abe9225ff2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    background-size: cover;
+}
+
+
+/* right */
+
+.right {
+    height: 40em;
+    overflow: hidden;
+}
+
+
+/* left-navbar */
+
+.left-navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* left-nav-container */
+
+.left-nav-container {
+    position: relative;
+}
+
+
+/* logo */
+
+.logo {
+    font-family: Poppins;
+    margin: 20px 0;
+    position: relative;
+}
+
+
+/* left-nav */
+
+.left-nav {
+    position: relative;
+}
+
+.left-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.left-nav ul li {
+    text-decoration: none;
+    margin: 20px 10px;
+    font-family: poppins;
+    cursor: pointer;
+}
+
+.left-nav ul li:hover::after {
+    content: "";
+    height: 2px;
+    background-color: #000000;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* items-contianer */
+
+.items-container {
+    height: 768px;
+    width: 640px;
+}
+
+.items-container::before {
+    content: "<";
+    border: 2px solid black;
+    position: absolute;
+    top: 320px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    height: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    width: 10px;
+    font-family: poppins;
+    cursor: pointer;
+}
+
+.items-container::after {
+    content: ">";
+    border: 2px solid black;
+    position: absolute;
+    top: 320px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    height: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: poppins;
+    width: 10px;
+    cursor: pointer;
+}
+
+
+/* items-img */
+
+.items-img {
+    object-fit: cover;
+    height: 768px;
+    width: 640px;
+    margin: 0 64px;
+}
+
+
+/* right-nav */
+
+.right-nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 1em;
+    margin: 20px 0;
+    margin-right: 50px;
+    justify-content: flex-end;
+}
+
+.right-nav ul li {
+    text-decoration: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+/* div.right */
+
+div.right h1 {
+    font-size: 4em;
+    font-family: Poppins;
+    padding-left: 70px;
+    font-family: "Merriweather", serif;
+}
+
+div.right p {
+    padding-left: 70px;
+    font-family: poppins;
+    font-size: 1.5em;
+}
+
+
+/* items-color */
+
+.items-color ul {
+    padding-left: 70px;
+    display: flex;
+    list-style: none;
+}
+
+.items-color ul li {
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.bg-red {
+    background-color: grey;
+}
+
+.bg-yellow {
+    background-color: rgb(66, 66, 66);
+}
+
+.bg-green {
+    background-color: rgb(211, 194, 194);
+}
+
+.bg-blue {
+    background-color: rgb(37, 37, 37);
+}
+
+
+/* items-color */
+
+.bag {
+    padding: 10px 0 !important;
+    margin-top: 30px;
+    margin-left: 70px;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    border-radius: 50px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* items-description-container */
+
+.items-description-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    margin: 20px 0;
+}
+
+
+/* details */
+
+.details {
+    display: none;
+    animation: down 0.1s 1;
+}
+
+.details>p {
+    font-size: 1em !important;
+}
+
+.details>p>span {
+    color: grey;
+}
+
+
+/* material-symbols-outlined */
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
+
+/* up-arrow */
+
+#up-arrow {
+    display: none;
+}
+
+hr {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
+/* items-description */
+
+.items-description {
+    margin: 12px 0;
+}
+
+
+/* Animation */
+
+@keyframes down {
+    from {
+        transform: translateY(-30%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
